@@ -1,0 +1,31 @@
+
+body{
+    background-color: #F8F3EE;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: white;
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display:flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    justify-content: center;
+    
+}
+
+.logo{
+    height: 70px;
+
+
+
+}
