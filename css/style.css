@@ -26,6 +26,72 @@ ul{
 .logo{
     height: 70px;
 
+}
 
+a{
+    text-decoration: none;
+    color: #4A3B36;
+    transition: 0.3s;
 
+}
+
+a:hover{
+    color: #C8A27A;
+
+}
+nav ul{
+    margin: 0;
+    
+}
+nav a{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+}
+
+.hero{
+    height: 600px;
+    background-color: #EEDFD2;
+    display: flex;
+    align-items: center;
+
+}
+.hero-content{
+    margin-left: 80px;
+}
+
+.hero-content h1{
+    font-size: 52px;
+    color: #4A3B36;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    font-size: 20px;
+    color: #6B5B55;
+    margin-bottom: 35px;
+
+}
+.botao{
+    background-color: #C8A27A;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px; 
+    display: inline-block;
+    
+}
+.botao:hover{
+    background-color: #B88A5A;
+}
+.hero-content{
+    height: 600px;
+    background-image: url("../imagens/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+}
+.titulo-seo{
+    display: nome;
 }
