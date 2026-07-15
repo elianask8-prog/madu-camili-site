@@ -73,7 +73,7 @@ nav a{
 }
 
 .botao{
-    background-color: #C8A27A;
+    background-color: #c9a075;
     color: white;
     padding: 15px 30px;
     border-radius: 8px; 
@@ -82,7 +82,7 @@ nav a{
     
 }
 .botao:hover{
-    background-color: #B88A5A;
+    background-color: #b98956;
 }
 
 .titulo-seo{
@@ -148,7 +148,7 @@ nav a{
 .servicos{
     padding: 70px 40px;
     text-align:center;
-    background-color: #f8ede2;
+    background: #f8ede2;
 }
 
 .servicos h2{
@@ -192,4 +192,132 @@ nav a{
 .card-servico p{
     color:#0d0c0b;
     line-height:1.6;
+}
+
+.galeria{
+    padding: 70px 40px;
+    background-color: #f8ede2;    
+}
+
+.galeria h2{
+    text-align: center;
+    font-family:"Playfair Display", serif;
+    font-size: 36px;
+    color: #050404;
+    margin-bottom: 60px;
+}
+
+.galeria-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.galeria-madu h3,
+.galeria-camili h3{
+    text-align: center;
+    font-size: 25px;
+    color: #4A3B36;
+    margin-bottom: 30px;
+    font-style:inherit;
+}
+
+.fotos-camili{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.fotos-camili img{
+    width: 100%;
+    height: 270px;
+
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.4s;
+
+    cursor: pointer;
+}
+
+.fotos-camili img:hover{
+
+    transform: scale(1.05);
+}
+
+.galeria-madu{
+    text-align: center;
+    font-style:inherit;
+}
+
+.fotos-madu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fotos-madu img{
+    width: 450px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.fotos-madu img:hover{
+    transform: scale(1.03);
+}
+
+.galeria-madu p{
+    font-size: 20px;
+    color: #7D6B63; 
+    font-style: italic;
+}
+
+.contato{
+    padding: 70px 40px;
+    background-color: #c07e83;
+    text-align: center;
+}
+
+.contato h2{
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.contato p{
+    font-size: 18px;
+    color: white;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.contato-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+} 
+
+
+.botao-contato{
+    display: inline-block;
+    background:#f8ede2 ;
+    color: #4A3B36;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+    
+
+}
+
+.botao-contato:hover{
+
+    background: #c9a075;
+    color: white;
 }
