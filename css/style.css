@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background-color: #f8dcf4ea;
+    background-color: #f8ede2;
     height: 90px;
     padding: 0 40px;
     display: flex;
@@ -92,20 +92,22 @@ nav a{
 .equipe{
     padding: 70px 40px;
     text-align:center;
-    background-color:  #f8dcf4ea;
+    background-color:  #f8ede2;
     
 }
 
 .equipe h2{
     text-align: center;
-    font-size:32px;
-    color: #4A3B36;
+    font-family: Playfair Display, serif;
+    font-size: 36px;
+    color: #050404;
     
 }
 .equipe h3{
     text-align: center;
-    font-size:30px;
-    color: #4A3B36;
+    font-family: lato, sans-serif;
+    font-size:25px;
+    color: #030303;
     
 
 }
@@ -119,7 +121,7 @@ nav a{
 
 .card-equipe{
     width: 300px;
-    background: #f7caf0e5;
+    background: #c07e83;
     padding: 60px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -129,14 +131,65 @@ nav a{
     width: 300px;
     height:300px;
     border-radius:50%;
-    object-fit: cover;
+    object-fit:cover;
+    object-position: 60% 30%;
+   
 }
 
 .card-equipe h4{
-    color: #4A3B36;
+    color: #0c0a09;
     font-size:25px;    
 }
 .card-equipe p{
-    color:#6b5951;
+    color:#0d0c0b;
+    line-height:1.6;
+}
+
+.servicos{
+    padding: 70px 40px;
+    text-align:center;
+    background-color: #f8ede2;
+}
+
+.servicos h2{
+    text-align: center;
+    font-family: lato, sans-serif;   
+    font-size: 30px;
+    color: #050404;
+}
+
+
+.servicos h3{
+    text-align: center;
+    font-family: Playfair Display, serif;
+    font-size: 25px;
+    color: #050404;
+    
+}
+.servicos-container{
+    display:flex;
+    justify-content: space-evenly;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.card-servico{
+    width: 250px;
+    background: #c07e83;
+    padding: 70px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-servico img{
+    width: 250px;
+    height:250px;
+    border-radius:50%;
+    object-fit: cover;
+    object-position: center;
+} 
+
+.card-servico p{
+    color:#0d0c0b;
     line-height:1.6;
 }
