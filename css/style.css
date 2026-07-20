@@ -1,12 +1,12 @@
 
 body{
-    background-color: #F8F3EE;
+    background-color:  #F0D7CE;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header{
-    background-color: #f8ede2;
+    background-color:  #F0D7CE;
     height: 90px;
     padding: 0 40px;
     display: flex;
@@ -103,7 +103,7 @@ nav a{
 .equipe{
     padding: 70px 40px;
     text-align:center;
-    background-color:  #f8ede2;
+    background-color:   #F0D7CE;
     
 }
 
@@ -167,7 +167,7 @@ nav a{
 .servicos{
     padding: 70px 40px;
     text-align:center;
-    background: #f8ede2;
+    background:  #F0D7CE;
 }
 
 .servicos h2{
@@ -308,14 +308,14 @@ nav a{
 .contato h2{
     font-family: "Playfair Display", serif;
     font-size: 36px;
-    color: white;
+    color: rgb(8, 8, 8);
     margin-bottom: 20px;
 
 }
 
 .contato p{
     font-size: 18px;
-    color: white;
+    color: rgb(10, 9, 9);
     max-width: 650px;
     margin: 0 auto 40px;
     line-height: 1.7;
