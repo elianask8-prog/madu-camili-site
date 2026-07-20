@@ -427,7 +427,8 @@ footer hr{
     }
 
     .hero{
-    height: 280px;
+        height: 330px;
+        background-position: center top;
     }
     
     .hero-content{
@@ -436,7 +437,7 @@ footer hr{
     }
 
     .logo{
-    height: 100px;
+    height: 90px;
     }
     
     header{
