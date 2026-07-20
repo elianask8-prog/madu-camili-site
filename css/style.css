@@ -402,12 +402,24 @@ footer hr{
     font-size:20px;
     }
 
-    .card-equipe,
-    .card-servico{
+    .card-equipe{
 
-        width:100%;
-        max-width:320px;
+        width:auto;
+        padding: 30px;
     }
+
+    .card-servico{
+        width: auto;
+        padding: 30px;
+    }
+
+    .servicos-container,
+    .equipe-container{
+
+        justify-content: center;
+
+    }
+
 
     .card-equipe img{
         width:220px;
@@ -415,11 +427,12 @@ footer hr{
     }
 
     .hero{
-    height:500px;
+    height:380px;
     }
     
     .hero-content{
     text-align:center;
+    
     }
 
     .logo{
