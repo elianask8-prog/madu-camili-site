@@ -391,6 +391,45 @@ footer hr{
 
 @media (max-width: 768px){
 
+    .equipe h2,
+    .galeria h2,
+    .contato h2{
+
+        font-size:30px;
+    }
+
+    .equipe h3{
+    font-size:20px;
+    }
+
+    .card-equipe,
+    .card-servico{
+
+        width:100%;
+        max-width:320px;
+    }
+
+    .card-equipe img{
+        width:220px;
+        height:220px;
+    }
+
+    .hero{
+    height:500px;
+    }
+    
+    .hero-content{
+    text-align:center;
+    }
+
+    .logo{
+    height: 80px;
+    }
+    
+    header{
+    padding: 15px 20px;
+    }
+
     .menu{
     display: none;
     }
