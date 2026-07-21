@@ -136,10 +136,23 @@ nav a{
     padding: 60px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform .3s, box-shadow .3s ;
-
-  
+    transition:
+        transform .8s ease,
+        opacity .8s ease,
+        box-shadow .8s ease;  
 }
+
+.card-esquerda{
+    
+    transform: translateX(-80px);
+}
+
+.card-direita{
+    
+    transform: translateX(80px);
+}
+
+
 .card-equipe:hover{
     transform: scale(1.05) translateY(-15px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -389,7 +402,148 @@ footer hr{
     display: none;
 }
 
+
+#menu-toggle{
+    background: none;
+    border: none;   
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.bloco-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.opcoes-whatsapp.oculto,
+.opcoes-instagram.oculto{
+    display: none;
+}
+
+.opcoes-whatsapp,
+.opcoes-instagram{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+@keyframes subirCard{
+    from{
+        opacity:0;
+        transform: translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entrarEsquerda{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes entrarDireita{
+
+    from{
+
+        opacity:0;
+        transform:translateX(100px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+
+@keyframes entrarBaixo{
+    from{
+        opacity:0;
+        transform: translateY(80px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.equipe.mostrar .card-esquerda{
+
+    animation: entrarEsquerda .8s ease forwards;
+
+}
+
+.equipe.mostrar .card-direita{
+    animation: entrarDireita .8s ease .2s both;
+}
+
+
+.servicos.mostrar .servico-esquerda{
+    animation: entrarEsquerda .8s ease forwards;
+}
+
+.servicos.mostrar .servico-direita{
+    animation: entrarDireita .8s ease .4s both;
+}
+
+
+
 @media (max-width: 768px){
+
+    .card-servico{
+        opacity:0;
+        width:auto;
+        padding:30px;
+    }
+
+
+    .servicos.mostrar .servico-esquerda,
+    .servicos.mostrar .servico-direita{
+
+        animation: subirCard .8s ease forwards;
+
+    }
+
+     .servicos.mostrar .servico-esquerda{
+        animation-delay:0s;
+    }
+
+    .servicos.mostrar .servico-direita{
+        animation-delay:.3s;
+    }
+
+
+
 
     .equipe h2,
     .galeria h2,
@@ -408,11 +562,7 @@ footer hr{
         padding: 30px;
     }
 
-    .card-servico{
-        width: auto;
-        padding: 30px;
-    }
-
+    
     .servicos-container,
     .equipe-container{
 
@@ -473,33 +623,7 @@ footer hr{
     #menu-toggle{
     display:block;
     }
-}
 
 
-#menu-toggle{
-    background: none;
-    border: none;   
-    font-size: 30px;
-    cursor: pointer;
-
-}
-
-.bloco-contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.opcoes-whatsapp.oculto,
-.opcoes-instagram.oculto{
-    display: none;
-}
-
-.opcoes-whatsapp,
-.opcoes-instagram{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
+    
 }

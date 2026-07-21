@@ -8,11 +8,11 @@ const observer = new IntersectionObserver((entradas) => {
 
             setTimeout(() => {
 
-            elemento.target.classList.add("mostrar");
+                elemento.target.classList.add("mostrar");
             
-            observer.unobserve(elemento.target);
+                observer.unobserve(elemento.target);
 
-        }, 500);
+            }, 500);
 
         
 
