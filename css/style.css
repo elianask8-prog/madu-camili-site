@@ -428,8 +428,8 @@ footer hr{
 
     
     .hero{
-        background-image: url("../imagens/banner_celular.jpeg");
-        height:330px;
+        height: 330px;
+        background-position: center 20%;
     }
 
     .logo{
