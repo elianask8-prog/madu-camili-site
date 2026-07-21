@@ -576,6 +576,24 @@ footer hr{
     }
 
 
+    .equipe.mostrar .card-esquerda,
+    .equipe.mostrar .card-direita{
+
+        animation: subirCard .8s ease forwards;
+
+    }   
+
+
+    .equipe.mostrar .card-esquerda{
+        animation-delay:0s;
+    }
+
+
+    .equipe.mostrar .card-direita{
+        animation-delay:.3s;
+    }
+
+
 
 
     .equipe h2,
