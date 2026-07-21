@@ -431,9 +431,9 @@ footer hr{
         background-position: center top;
     }
     
-    .hero-content{
-    text-align:center;
-    
+    .hero{
+        height: 330px;
+        background-position: center 20%;
     }
 
     .logo{
