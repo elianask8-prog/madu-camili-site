@@ -525,6 +525,8 @@ footer hr{
 
     transition:0.3s;
 
+    animation: pulsar 2.5s infinite;
+
 }
 
 
@@ -712,6 +714,25 @@ footer hr{
     }
 }
 
+@keyframes pulsar {
+
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+
+    70% {
+        transform: scale(1.08);
+        box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+
+}
+
 
 
 
@@ -894,12 +915,15 @@ footer hr{
    
     .whatsapp-flutuante{
 
+        width: 55px;
+        height: 55px;
+
+        font-size: 28px;
+
         right: 15px;
         bottom: 20px;
 
-        padding: 12px 16px;
-
-        font-size: 14px;
+        animation: pulsar 3s infinite;
 
     }
 
