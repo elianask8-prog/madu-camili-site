@@ -112,3 +112,32 @@ btnCamili.addEventListener("click", (event) => {
     galeriaMadu.classList.add("oculto");
     galeriaCamili.scrollIntoView({ behavior: "smooth" });
 });
+
+const lightbox = document.getElementById("lightbox");
+const imagemLightbox = document.getElementById("imagem-lightbox");
+const fecharLightbox = document.getElementById("fechar-lightbox");
+
+const imagensGaleria = document.querySelectorAll(".fotos-madu img, .fotos-camili img");
+
+
+imagensGaleria.forEach((imagem) => {
+
+    imagem.addEventListener("click", () => {
+
+        console.log(imagem.getAttribute("src"));
+
+        imagemLightbox.src = imagem.getAttribute("src");
+
+        lightbox.classList.add("ativo");
+
+    });
+
+});
+
+
+
+fecharLightbox.addEventListener("click", () => {
+
+    lightbox.classList.remove("ativo");
+
+});

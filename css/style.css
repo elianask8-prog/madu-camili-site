@@ -433,6 +433,57 @@ footer hr{
     margin-top: 15px;
 }
 
+/* Almenta as imagens da galeria*/
+
+.lightbox{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.85);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    display: none;
+}
+
+.lightbox.ativo{
+
+    display: flex;
+
+}
+
+.lightbox img{
+
+    max-width: 90%;
+    max-height: 90%;
+
+    border-radius: 15px;
+}
+
+#fechar-lightbox{
+
+    position: absolute;
+
+    top: 30px;
+    right: 40px;
+
+    font-size: 45px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+/* Animação lenta no Banner*/
+
 @keyframes entrarBannerMobile{
 
     from{
@@ -460,6 +511,8 @@ footer hr{
     }
 
 }
+
+/* Animação lenta nos cards*/
 
 @keyframes subirCard{
     from{
@@ -545,7 +598,7 @@ footer hr{
     animation: entrarDireita .8s ease .4s both;
 }
 
-
+/* responsividade */
 
 @media (max-width: 768px){
 
@@ -676,5 +729,23 @@ footer hr{
     }
 
 
+    .lightbox img{
+
+        max-width:95%;
+        max-height:80%;
+        border-radius:15px;
+
+    }
+
+    #fechar-lightbox{
+
+        top:20px;
+        right:25px;
+        font-size:40px;
+
+    }
+
+
     
 }
+
