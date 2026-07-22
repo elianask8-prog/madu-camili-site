@@ -80,6 +80,18 @@ menuToggle.addEventListener("click", () => {
     menu.classList.toggle("menu-aberto");
 });
 
+const linksMenu = document.querySelectorAll(".menu a");
+
+linksMenu.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        menu.classList.remove("menu-aberto");
+
+    });
+
+});
+
 function abrirOpcoesInstagram(event){
 
     event.preventDefault();
