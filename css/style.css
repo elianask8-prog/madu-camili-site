@@ -733,6 +733,12 @@ footer hr{
 
     #menu-toggle{
         display:block;
+         background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+
+        color: #4A3B36;
     }
 
 
