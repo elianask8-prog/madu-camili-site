@@ -187,3 +187,14 @@ btnTopo.addEventListener("click", () => {
 
 
 });
+
+const btnWhatsappFlutuante = document.getElementById("btn-whatsapp-flutuante");
+
+const opcoesWhatsappFlutuante = document.querySelector(".opcoes-whatsapp-flutuante");
+
+
+btnWhatsappFlutuante.addEventListener("click", ()=>{
+
+    opcoesWhatsappFlutuante.classList.toggle("oculto");
+
+});
