@@ -485,6 +485,48 @@ footer hr{
     cursor: pointer;
 }
 
+/*botão volta ao topo*/
+.btn-topo{
+
+    position: fixed;
+
+    left: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background-color: #c07e83;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+
+    z-index: 999;
+
+}
+
+
+.btn-topo:hover{
+
+    transform: translateY(-5px);
+
+}
 
 /* Animação lenta no Banner*/
 
@@ -758,31 +800,37 @@ footer hr{
         font-size:40px;
 
     }
-/*
-    .animar{
-        transform: translateY(25px);
-        transition: all 0.7s ease;
+
+   
+    .whatsapp-flutuante{
+
+        right: 15px;
+        bottom: 20px;
+
+        padding: 12px 16px;
+
+        font-size: 14px;
+
     }
 
 
-    .equipe h2,
-    .servicos h2,
-    .galeria h2,
-    .contato h2{
-        font-size: 28px;
-        text-align: center;
-        line-height: 1.3;
-        margin-bottom: 45px;
+    
+    .btn-topo{
+
+        left: 15px;
+        bottom: 20px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 22px;
+
     }
-     .equipe h3{
-        font-size: 20px;
-        text-align: center;
-        padding: 0 20px;
-        margin-bottom: 45px;
-    }
-*/
 
 }
+
+
+
 
 
     
