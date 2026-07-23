@@ -787,14 +787,14 @@ footer hr{
 
     .servicos.mostrar .servico-esquerda{
 
-        animation: subirCard .8s ease .2s forwards;
+        animation: subirCard .8s ease .2s both;
 
     }
 
 
     .servicos.mostrar .servico-direita{
 
-        animation: subirCard .8s ease .5s forwards;
+        animation: subirCard .8s ease .5s both;
 
     }
 
@@ -803,14 +803,14 @@ footer hr{
 
     .equipe.mostrar .card-esquerda{
 
-        animation: subirCard .8s ease .4s forwards;
+        animation: subirCard .8s ease .4s both;
 
     }
 
 
     .equipe.mostrar .card-direita{
 
-        animation: subirCard .8s ease .7s forwards;
+        animation: subirCard .8s ease .7s both;
 
     }
 
