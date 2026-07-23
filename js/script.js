@@ -1,6 +1,4 @@
 
-const celular = window.innerWidth <= 768;
-
 
 const elementos = document.querySelectorAll(".animar");
 
@@ -16,37 +14,26 @@ const observer = new IntersectionObserver((entradas) => {
             
                 observer.unobserve(elemento.target);
 
-            }, 500);
+            }, 300);
 
         
 
-}
+        }
 
     });
+
+},{
+    threshold: 0.3
+});
+
+elementos.forEach((elemento) => {
+
+    observer.observe(elemento);
 
 });
 
 
-if(!celular){
 
-    elementos.forEach((elemento) => {
-
-        observer.observe(elemento);
-
-    });
-
-}
-
-
-if(celular){
-
-    setTimeout(() => {
-
-        document.querySelector(".equipe").classList.add("mostrar");
-
-    }, 1200);
-
-}
 
 
 

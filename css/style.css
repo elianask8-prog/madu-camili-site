@@ -735,25 +735,41 @@ footer hr{
 
 
 
+/* Equipe */
+
+.equipe.mostrar h2{
+    animation: entrarBaixo .8s ease both;
+}
+
+
+.equipe.mostrar h3{
+    animation: entrarBaixo .8s ease .2s both;
+    
+}
+
 
 .equipe.mostrar .card-esquerda{
-
-    animation: entrarEsquerda .8s ease forwards;
-
+    animation: entrarEsquerda .8s ease .4s both;
 }
+
 
 .equipe.mostrar .card-direita{
-    animation: entrarDireita .8s ease .2s both;
+    animation: entrarDireita .8s ease .6s both;
 }
 
+
+
+/* Serviços */
 
 .servicos.mostrar .servico-esquerda{
-    animation: entrarEsquerda .8s ease forwards;
+    animation: entrarEsquerda .8s ease both;
 }
+
 
 .servicos.mostrar .servico-direita{
     animation: entrarDireita .8s ease .4s both;
 }
+
 
 /* responsividade */
 
@@ -769,41 +785,34 @@ footer hr{
         padding:30px;
     }
 
+    .servicos.mostrar .servico-esquerda{
 
-    .servicos.mostrar .servico-esquerda,
+        animation: subirCard .8s ease .2s forwards;
+
+    }
+
+
     .servicos.mostrar .servico-direita{
 
-        animation: subirCard .8s ease forwards;
+        animation: subirCard .8s ease .5s forwards;
 
     }
 
-     .servicos.mostrar .servico-esquerda{
-        animation-delay:0s;
-    }
 
-    .servicos.mostrar .servico-direita{
-        animation-delay:.3s;
-    }
-
-
-    .equipe.mostrar .card-esquerda,
-    .equipe.mostrar .card-direita{
-
-        animation: subirCard .8s ease forwards;
-
-    }   
 
 
     .equipe.mostrar .card-esquerda{
-        animation-delay:0s;
+
+        animation: subirCard .8s ease .4s forwards;
+
     }
 
 
     .equipe.mostrar .card-direita{
-        animation-delay:.3s;
+
+        animation: subirCard .8s ease .7s forwards;
+
     }
-
-
 
 
     .equipe h2,
