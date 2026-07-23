@@ -1,3 +1,7 @@
+
+const celular = window.innerWidth <= 768;
+
+
 const elementos = document.querySelectorAll(".animar");
 
 const observer = new IntersectionObserver((entradas) => {
@@ -23,13 +27,28 @@ const observer = new IntersectionObserver((entradas) => {
 });
 
 
-elementos.forEach((elemento) => {
+if(!celular){
 
-    observer.observe(elemento);
-    
+    elementos.forEach((elemento) => {
+
+        observer.observe(elemento);
+
+    });
+
+}
 
 
-});
+if(celular){
+
+    setTimeout(() => {
+
+        document.querySelector(".equipe").classList.add("mostrar");
+
+    }, 1200);
+
+}
+
+
 
 const btnMadu = document.getElementById("btn-madu");
 const btnCamili = document.getElementById("btn-camili");
