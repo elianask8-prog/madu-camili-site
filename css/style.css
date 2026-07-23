@@ -839,6 +839,12 @@ footer hr{
 
     }
 
+    .card-equipe:hover{
+
+        transform: none;
+
+    }
+
     
     .servicos-container,
     .equipe-container{
