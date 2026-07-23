@@ -832,6 +832,13 @@ footer hr{
         padding: 30px;
     }
 
+    .card-esquerda,
+    .card-direita{
+
+        transform: translateX(0);
+
+    }
+
     
     .servicos-container,
     .equipe-container{
