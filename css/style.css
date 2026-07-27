@@ -292,18 +292,20 @@ nav a{
 }
 
 .fotos-madu{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+   display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
 }
 
 .fotos-madu img{
-    width: 450px;
-    height: 650px;
+    width: 100%;
+    height: 270px;
+
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    transition: .4s;
+    border-radius: 15px;
+    transition: 0.4s;
+
     cursor: pointer;
 }
 
@@ -931,9 +933,7 @@ footer hr{
     }  
 
     .fotos-madu img{
-        width: 100%;
-        max-width: 450px;
-        height: auto;
+        grid-template-columns: repeat(2,1fr);
     }
     .menu-aberto{
         display: block;
