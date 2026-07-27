@@ -310,13 +310,7 @@ nav a{
 }
 
 .fotos-madu img:hover{
-    transform: scale(1.03);
-}
-
-.galeria-madu p{
-    font-size: 20px;
-    color: #7D6B63; 
-    font-style: italic;
+    transform: scale(1.05);
 }
 
 .contato{
