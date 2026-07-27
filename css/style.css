@@ -932,7 +932,7 @@ footer hr{
         grid-template-columns: repeat(2,1fr);
     }  
 
-    .fotos-madu img{
+    .fotos-madu{
         grid-template-columns: repeat(2,1fr);
     }
     .menu-aberto{
