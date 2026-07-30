@@ -138,8 +138,6 @@ nav a {
     box-shadow 0.8s ease;
 }
 
-
-
 .card-equipe:hover {
   transform: scale(1.05) translateY(-15px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -673,12 +671,24 @@ footer hr {
   }
 }
 
+/* responsividades */
 
+/* Notebook */
+@media (max-width: 1024px) {
+  .hero {
+    height: 450px;
+  }
 
-/* responsividade */
+  .card-equipe {
+    width: 260px;
+  }
+  .card-servico {
+    width: 220px;
+  }
+}
 
+/* Tablet */
 @media (max-width: 768px) {
-  /* Animações no mobile */
   .reveal-left,
   .reveal-right,
   .reveal-up {
@@ -699,7 +709,6 @@ footer hr {
     width: auto;
     padding: 30px;
   }
-
 
   .equipe h2,
   .galeria h2,
@@ -824,5 +833,57 @@ footer hr {
     height: 55px;
 
     font-size: 28px;
+  }
+}
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+  .hero-content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-content .botao {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+
+  .equipe {
+    padding: 50px 20px;
+  }
+
+  .servicos {
+    padding: 50px 20px;
+  }
+}
+
+/* Celulares pequenos */
+
+@media (max-width: 400px) {
+  .logo {
+    height: 75px;
+  }
+
+  .equipe h2 {
+    font-size: 26px;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .card-equipe,
+  .card-servico {
+    padding: 20px;
+  }
+
+  .card-equipe img,
+  .card-servico img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
   }
 }
