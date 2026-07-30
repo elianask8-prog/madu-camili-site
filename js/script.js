@@ -1,38 +1,35 @@
 
 
-const elementos = document.querySelectorAll(".animar");
+const revealElements = document.querySelectorAll(
+    ".reveal-left, .reveal-right, .reveal-up, .reveal-fade"
+);
 
-const observer = new IntersectionObserver((entradas) => {
+const observer = new IntersectionObserver(
+    (entries, observer) => {
 
-    entradas.forEach((elemento) => {
+        entries.forEach((entry) => {
 
-        if(elemento.isIntersecting){
+            if (entry.isIntersecting) {
 
-            setTimeout(() => {
+                entry.target.classList.add("active");
 
-                elemento.target.classList.add("mostrar");
-            
-                observer.unobserve(elemento.target);
+                observer.unobserve(entry.target);
 
-            }, 300);
+            }
 
-        
+        });
 
-        }
+    },
+    {
+        threshold: 0.2,
+    }
+);
 
-    });
+revealElements.forEach((element) => {
 
-},{
-    threshold: 0.3
+    observer.observe(element);
+
 });
-
-elementos.forEach((elemento) => {
-
-    observer.observe(elemento);
-
-});
-
-
 
 
 
